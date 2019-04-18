@@ -8,15 +8,8 @@
   <div class="row">
     <div class="col">
   <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-  </div>
 </div>
-    <p class="author">By {% for author in authors %}
-      <a href="{{ author.link }}" target="_blank">{{ author.name }}</a>{% if not loop.last %}{% if loop.revindex0 == 1 %} and {% else %}, {% endif %}{% endif %} {% endfor %}
-      <br> Published {{ publish_date }}
-    </p>
+
     </div>
   </div>
   <div class="row">
@@ -24,12 +17,53 @@
       <p>
         Lucas ipsum dolor <a href="detail-page.html">link to detail-page.html</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
       </p>
-      <ul> 
-        {% for book in data.books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
+       {% for member in data.json %}
+          <li>{{ member.name }}, {{ member. }}</li>
         {% else %}
           <li>This would display if the 'books' collection were empty</li>
         {% endfor %}
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/members/freddie-mercury-bw.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Freddie Mercury</h5>
+      <p class="card-text">Lead Singer</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/members/brian-may-bw.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Brian May</h5>
+      <p class="card-text">Lead Guitarist</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/members/john-deacon-bw.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">John Deacon</h5>
+      <p class="card-text">Bassist</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/members/roger-taylor-bw.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Roger Taylor</h5>
+      <p class="card-text">Drummer</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
      </ul>
     </div>
   </div>
