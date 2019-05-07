@@ -16,18 +16,18 @@
       </p>
     </div>
   </div>
-  <div class="row">
+
+ <div class="row">
   {% for member in data.members %}
-    <div class="card col-sm-3">
+   <div class="col-sm-3">
+    <div class="card">
       <img class="card-img-top" src="img/members/{{ member.imagebw }}">
         <div class="card-body">
-        <h5 class="card-title">{{ member.name }}</h5>
+        <h5 class="card-title"><a href="{{ member.slug }}.html">{{ member.name }}</a></h5>
         <p class="card-text">{{ member.instruments }}</p>
         </div>
-        <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-     </div>
+    </div>
+   </div>
   {% endfor %}
   </div>
 

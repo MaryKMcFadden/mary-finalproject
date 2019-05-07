@@ -10,7 +10,7 @@
         <h1>{{ members.name }}</h1>
         <h2>{{ members.tenure }}</h2>
         <h5>{{ members.instruments }}</h5>
-        <p>{{ members.text }}</p>
+        <p>{{ members.text | safe}} </p>
     </div>
   </div>
       {% block story %}{% endblock %}
