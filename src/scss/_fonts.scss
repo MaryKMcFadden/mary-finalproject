@@ -4,9 +4,20 @@ a:link {
 }
 
 a:hover {
+text-decoration: none;
 font-weight: bold;
 }
 
 a:visited {
   color:black;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-family: 'EB Garamond', serif;
+}
+
+.img-fluid {
+margin-top: 40px;
 }
