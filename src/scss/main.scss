@@ -1,7 +1,7 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
-// $body-bg: black;
+$body-bg: #cfcccc;
 // $body-color: grey;
 // $link-hover-color: white;
 // $font-family-sans-serif: "Helvetica Neue";
@@ -23,3 +23,8 @@
 @import "jumbotron";
 @import "discography";
 @import "fonts";
+
+
+.member-photo {
+  margin-top: 40px;
+  }
